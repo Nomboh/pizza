@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  padding: 20px;
+}
+.left {
+  flex: 1;
+  margin-right: 10px;
+}
+.table {
+  width: 100%;
+  border-spacing: 10px;
+  text-align: center;
+}
+
+.imgContainer {
+  height: 80px;
+  width: 80px;
+  position: relative;
+}
+
+.action:first-child {
+  background-color: teal;
+  margin: 10px;
+}
+.action:last-child {
+  background-color: #f44336;
+}
+.action {
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+}
+.next {
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #2196f3;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+}
+
+.right {
+  flex: 1;
+  margin-left: 10px;
+}

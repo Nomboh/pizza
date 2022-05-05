@@ -1,0 +1,59 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  background-color: #0c0c0e;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  position: relative;
+}
+
+.item:last-child {
+  flex: 2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.card {
+  flex: 1;
+  padding: 0 20px;
+}
+.heading {
+  color: goldenrod;
+}
+.moto {
+  color: whitesmoke;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.address,
+.hours {
+  color: #c6c6c6;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    height: auto;
+    text-align: center;
+  }
+  .item:first-child {
+    display: none;
+  }
+
+  .item {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .moto {
+    font-size: 25px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}

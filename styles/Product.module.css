@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgContainer {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.right {
+  flex: 1;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+.heading {
+  color: #212121;
+}
+
+.price {
+  font-size: 23px;
+  border-bottom: 2px solid var(--main);
+  color: var(--main);
+}
+.desc {
+  font-size: 20px;
+}
+.heading1 {
+  color: var(--secondary-dark);
+  font-size: 22px;
+}
+.sizes {
+  margin: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.size {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.size:nth-child(2) {
+  width: 55px;
+  height: 55px;
+}
+
+.size:last-child {
+  width: 65px;
+  height: 65px;
+}
+
+.text {
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  border-radius: 10px;
+  padding: 2px;
+  background-color: teal;
+  color: white;
+  display: block;
+}
+.additional {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.checkWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.checkGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkGroup > input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.number {
+  padding: 10px;
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.number:focus {
+  outline: none;
+}
+.btn {
+  height: 30px;
+  background-color: var(--main);
+  border: none;
+  color: white;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .imgContainer {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .price {
+    font-size: 27px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .sizes {
+    width: 90%;
+    margin: 0;
+  }
+
+  .additional {
+    padding-right: 0;
+  }
+
+  .right {
+    padding: 10px;
+  }
+  .checkWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .heading1 {
+    font-size: 18px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .number,
+  .btn {
+    height: 40px;
+  }
+}

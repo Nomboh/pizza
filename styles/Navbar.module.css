@@ -1,0 +1,109 @@
+.container {
+  height: 100px;
+  background-color: #d1411e;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.items {
+  flex: 1;
+}
+
+.items:nth-child(2) {
+  flex: 4;
+}
+.lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  font-size: 18px;
+  color: white;
+  font-weight: 00;
+  cursor: pointer;
+  margin: 25px;
+}
+
+.items:first-child {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.items:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.callButton {
+  background-color: white;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+
+.callWrapper {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.text:first-child {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.text:last-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.counter {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1411e;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 425px) {
+  .items:nth-child(2) {
+    display: none;
+  }
+  .text:first-child {
+    font-size: 12px;
+  }
+  .text:last-child {
+    font-size: 16px;
+  }
+  .container {
+    padding: 30px;
+  }
+}

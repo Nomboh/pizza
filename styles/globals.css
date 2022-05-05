@@ -1,3 +1,8 @@
+:root {
+  --main: #d1411e;
+  --secondary-light: #424242;
+  --secondary-dark: #212121;
+}
 html,
 body {
   padding: 0;
